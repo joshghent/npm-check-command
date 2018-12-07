@@ -12,14 +12,14 @@ $ npm install check-command --save
 ```javascript
 var checkCommand = require('check-command');
 
-checkCommand('package.json', 'build'); // => true or false
+checkCommand('build', 'package.json'); // => true or false
 ```
 
 ### Typescript
 ```typescript
 import { checkCommand } from 'check-command';
 
-checkCommand('package.json', 'build'); // => true or false
+checkCommand('build', 'package.json'); // => true or false
 ```
 
 ## Test
