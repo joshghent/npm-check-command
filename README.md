@@ -3,21 +3,21 @@
 
 ## Installation
 ```
-$ npm install check-command --save
+$ npm install npm-check-command --save
 ```
 
 ## Usage
 
 ### Javascript
 ```javascript
-var checkCommand = require('check-command');
+var checkCommand = require('npm-check-command');
 
 checkCommand('build', 'package.json'); // => true or false
 ```
 
 ### Typescript
 ```typescript
-import { checkCommand } from 'check-command';
+import { checkCommand } from 'npm-check-command';
 
 checkCommand('build', 'package.json'); // => true or false
 ```

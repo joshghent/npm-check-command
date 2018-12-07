@@ -1,14 +1,18 @@
 {
-  "name": "check-command",
+  "name": "npm-check-command",
   "version": "1.0.0",
-  "description": "Check if a command is present in the packagejson",
+  "description": "Check if a command is present in the package.json",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "pretest": "npm run build",
     "test": "jest",
     "build": "tsc"
-  },
+	},
+	"repository": {
+		"url": "https://github.com/joshghent/npm-check-command",
+		"type": "git"
+	},
   "author": "Josh Ghent <me@joshghent.com>",
   "license": "MIT",
   "devDependencies": {
