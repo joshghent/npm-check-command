@@ -1,0 +1,23 @@
+{
+  "name": "check-command",
+  "version": "1.0.0",
+  "description": "Check if a command is present in the packagejson",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "Josh Ghent <me@joshghent.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
+    "jest": "^23.6.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "callsites": "^3.0.0"
+  }
+}

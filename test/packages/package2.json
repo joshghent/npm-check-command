@@ -1,0 +1,22 @@
+{
+    "name": "test-package",
+    "version": "1.0.0",
+    "description": "A test package",
+    "main": "dist/index.js",
+    "scripts": {
+      "test": "npm run lint",
+      "build:dev": "tsc --watch",
+      "lint": "tslint src/**/*.ts"
+    },
+    "author": "Example Person <person@example.com>",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+    },
+    "devDependencies": {
+      "typescript": "^3.1.6"
+    },
+    "engines": {
+      "node": ">= 8"
+    }
+  }
