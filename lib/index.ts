@@ -7,8 +7,10 @@ const callsites = require('callsites');
  * @param  {string} command - the command to check for presence
  * @returns boolean
  */
-module.exports = (file: string, command: string): boolean => {
+export function checkCommand(file: string, command: string): boolean {
     const relativeDir: string = callsites()[1].getFileName().replace(/[^/]+$/, "").replace(/\/$/, "");
     const packageJSON: any = JSON.parse(readFileSync(`${relativeDir}/${file}`, "utf8"));
     return packageJSON.scripts ? Object.keys(packageJSON.scripts).includes(command) : false;
 }
+
+module.exports = checkCommand;
